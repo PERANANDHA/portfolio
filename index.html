@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERANANDHA K L | Portfolio</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="profile.jpeg" type="image/jpeg">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- 3D AI Neural Network Background -->
+    <div class="background-container">
+        <canvas id="bg-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">P<span class="highlight">K</span>L</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                <!-- Realistic Sun Icon -->
+                <svg class="sun-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="sunCore" cx="40%" cy="30%" r="60%">
+                            <stop offset="0%" stop-color="#ffffff" />
+                            <stop offset="15%" stop-color="#ffe600" />
+                            <stop offset="40%" stop-color="#ff9d00" />
+                            <stop offset="70%" stop-color="#ff4800" />
+                            <stop offset="100%" stop-color="#b31500" />
+                        </radialGradient>
+                        <radialGradient id="sunCorona" cx="50%" cy="50%" r="50%">
+                            <stop offset="40%" stop-color="#ffea00" stop-opacity="0.9" />
+                            <stop offset="70%" stop-color="#ff7300" stop-opacity="0.5" />
+                            <stop offset="100%" stop-color="#ff0000" stop-opacity="0" />
+                        </radialGradient>
+                    </defs>
+
+                    <g class="sun-rays" stroke="#ffe100" stroke-width="1.5" stroke-linecap="round">
+                        <line x1="50" y1="2" x2="50" y2="14" />
+                        <line x1="50" y1="86" x2="50" y2="98" />
+                        <line x1="2" y1="50" x2="14" y2="50" />
+                        <line x1="86" y1="50" x2="98" y2="50" />
+
+                        <line x1="16" y1="16" x2="25" y2="25" />
+                        <line x1="84" y1="84" x2="75" y2="75" />
+                        <line x1="16" y1="84" x2="25" y2="75" />
+                        <line x1="84" y1="16" x2="75" y2="25" />
+
+                        <g transform="rotate(22.5 50 50)" stroke-width="1" stroke="rgba(255, 200, 0, 0.8)">
+                            <line x1="50" y1="6" x2="50" y2="15" />
+                            <line x1="50" y1="85" x2="50" y2="94" />
+                            <line x1="6" y1="50" x2="15" y2="50" />
+                            <line x1="85" y1="50" x2="94" y2="50" />
+
+                            <line x1="18" y1="18" x2="26" y2="26" />
+                            <line x1="82" y1="82" x2="74" y2="74" />
+                            <line x1="18" y1="82" x2="26" y2="74" />
+                            <line x1="82" y1="18" x2="74" y2="26" />
+                        </g>
+                    </g>
+                    <circle cx="50" cy="50" r="28" fill="url(#sunCore)" />
+                </svg>
+
+                <!-- Realistic Moon Icon -->
+                <svg class="moon-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#ffffff" />
+                            <stop offset="30%" stop-color="#c7d2fe" />
+                            <stop offset="70%" stop-color="#6366f1" />
+                            <stop offset="100%" stop-color="#312e81" />
+                        </linearGradient>
+                        <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#818cf8" stop-opacity="0.6" />
+                            <stop offset="80%" stop-color="#4f46e5" stop-opacity="0" />
+                        </radialGradient>
+                        <filter id="moonCraterGlow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="1.5" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+
+                    <path d="M 65 20 A 35 35 0 1 0 80 85 A 40 40 0 1 1 65 20 Z" fill="url(#moonGrad)" />
+
+                    <circle cx="35" cy="45" r="3" fill="#1e1b4b" opacity="0.4" filter="url(#moonCraterGlow)" />
+                    <circle cx="50" cy="65" r="4" fill="#1e1b4b" opacity="0.3" filter="url(#moonCraterGlow)" />
+                    <circle cx="45" cy="30" r="2" fill="#1e1b4b" opacity="0.5" filter="url(#moonCraterGlow)" />
+                    <circle cx="28" cy="60" r="2.5" fill="#1e1b4b" opacity="0.3" filter="url(#moonCraterGlow)" />
+
+                    <circle cx="75" cy="35" r="1.5" fill="#ffffff" opacity="0.8" />
+                    <circle cx="65" cy="50" r="1" fill="#ffffff" opacity="0.5" />
+                    <circle cx="82" cy="65" r="2" fill="#ffffff" opacity="0.6" />
+                </svg>
+            </button>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content scroll-reveal">
+                <p class="greeting">Hi, I am</p>
+                <h1 class="name">PERANANDHA K L</h1>
+                <h2 class="title">CS Engineer, <span class="highlight">QA Automation</span> & AI
+                    Enthusiast</h2>
+                <p class="tagline">Expertise in Vibe Coding, QA Testing, and building intuitive AI-driven
+                    scalable
+                    applications, with a strong passion for software and web development.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="PERANANDHA_K_L_Resume.pdf" target="_blank" class="btn btn-secondary">View Resume</a>
+                    <a href="mailto:peranandha17@gmail.com" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/PERANANDHA" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/peranandha-k-l-0143b9292" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:peranandha17@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+918148537603" aria-label="Phone" class="phone-link"><i class="fas fa-phone"></i>
+                        <span>+91 81485 37603</span></a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper scroll-reveal" style="transition-delay: 200ms;">
+                <div class="image-border">
+                    <img src="profile1.png" alt="PERANANDHA K L Profile" class="profile-img">
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-code"></i> Developer
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-robot"></i> AI Enthusiast
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </header>
+
+    <!-- Profile Summary Section -->
+    <section id="about" class="section">
+        <div class="container section-content scroll-reveal">
+            <h2 class="section-title">Profile <span class="highlight">Summary</span></h2>
+            <div class="glass-card about-card">
+                <p>
+                    Computer Science Engineer with strong expertise in <strong>Vibe Coding</strong> as a primary skill
+                    and also leveraging <strong>prompt engineering</strong> to build and optimize AI-driven projects.
+                    Experienced in translating ideas into functional solutions through intuitive, creative, and
+                    efficient coding practices.
+                </p>
+                <p>
+                    Skilled in <strong>software development</strong> and <strong>QA Automation</strong>. I have hands-on
+                    experience designing scalable applications and ensuring their reliability through comprehensive
+                    automated testing frameworks. My expertise includes writing robust test scripts using
+                    <strong>Selenium</strong> and modern testing methodologies to deliver bug-free software.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container section-content scroll-reveal">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+
+                <div class="glass-card skill-category">
+                    <h3><i class="fas fa-code"></i> Languages & Web</h3>
+                    <div class="badges">
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Java</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <h3><i class="fas fa-brain"></i> AI & Methodologies</h3>
+                    <div class="badges">
+                        <span class="badge">Selenium WebDriver</span>
+                        <span class="badge">Test Automation</span>
+                        <span class="badge">Vibe Coding</span>
+                        <span class="badge">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Design</h3>
+                    <div class="badges">
+                        <span class="badge">Antigravity</span>
+                        <span class="badge">Lovable</span>
+                        <span class="badge">Canva</span>
+                        <span class="badge">ChatGPT</span>
+                        <span class="badge">Gemini</span>
+                        <span class="badge">Copilot</span>
+                        <span class="badge">Midjourney</span>
+                        <span class="badge">Dall-E</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="badges">
+                        <span class="badge">Team Management</span>
+                        <span class="badge">Communication</span>
+                        <span class="badge">Punctuality</span>
+                        <span class="badge">UI/UX Design</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container section-content scroll-reveal">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+
+                <div class="glass-card project-card">
+                    <div class="project-content">
+                        <a href="https://github.com/PERANANDHA/DATAPULSE" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <h3>DATA PULSE <i class="fab fa-github"
+                                    style="font-size: 0.9em; margin-left: 5px; opacity: 0.8;"></i></h3>
+                        </a>
+                        <p>Developed software based on semester calculations and a consolidated report generator for
+                            semester exams. Developed only using modern prompt engineering techniques.</p>
+                        <div class="project-tech">
+                            <span>Prompt Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div class="project-content">
+                        <a href="https://github.com/PERANANDHA/EcoCluck" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <h3>ECOCLUCK <i class="fab fa-github"
+                                    style="font-size: 0.9em; margin-left: 5px; opacity: 0.8;"></i></h3>
+                        </a>
+                        <p>A sensor-embedded software system maintaining ideal temperatures for poultry birds. Ensures
+                            no environmental harm and includes multi-farm management. Developed entirely via prompt
+                            engineering.</p>
+                        <div class="project-tech">
+                            <span>Sensors</span>
+                            <span>Prompt Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div class="project-content">
+                        <a href="https://github.com/PERANANDHA/Infosys_KnownMap_AI" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <h3>KnowMap <i class="fab fa-github"
+                                    style="font-size: 0.9em; margin-left: 5px; opacity: 0.8;"></i><br><span
+                                    class="subtitle">Cross Domain Knowledge Mapping Tool</span></h3>
+                        </a>
+                        <p>Developed during Infosys Springboard Internship 6.0. Focuses on mapping knowledge across
+                            domains to enhance learning efficiency via guided practical exercises.</p>
+                        <div class="project-tech">
+                            <span>Knowledge Mapping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div class="project-content">
+                        <a href="https://github.com/PERANANDHA/Chroniccare-Agent---AICTE-EDUNET-IBM" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <h3>Chronic Care Agent AI <i class="fab fa-github"
+                                    style="font-size: 0.9em; margin-left: 5px; opacity: 0.8;"></i></h3>
+                        </a>
+                        <p>An AI-powered agent designed to assist chronic patients by addressing their doubts and
+                            providing tailored solutions to improve their daily care routine.</p>
+                        <div class="project-tech">
+                            <span>AI Agent</span>
+                            <span>Jupyter Notebooks</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Internships) -->
+    <section id="experience" class="section">
+        <div class="container section-content scroll-reveal">
+            <h2 class="section-title">Internship <span class="highlight">Experience</span></h2>
+            <div class="timeline">
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sep 2025 - Dec 2025</div>
+                    <h3>Web Development Intern</h3>
+                    <h4>Nexyuga Innovations Pvt Ltd</h4>
+                    <p>Designed and developed complete web pages and components from scratch, converting requirements
+                        into functional, responsive user interfaces using modern web technologies.</p>
+                    <a href="NEXYUGA INTERSHIP.pdf" target="_blank" class="btn btn-secondary"
+                        style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: 15px;"><i
+                            class="fas fa-file-pdf"></i> View Certificate</a>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sep 2025 - Nov 2025</div>
+                    <h3>Infosys Internship 6.0</h3>
+                    <h4>Infosys Springboard</h4>
+                    <p>Completed mandatory assignments on cross-domain knowledge mapping tool development. Gained
+                        hands-on exposure to problem-solving, domain mapping, and applied learning.</p>
+                    <a href="INFOSYS INTERSHIP.pdf" target="_blank" class="btn btn-secondary"
+                        style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: 15px;"><i
+                            class="fas fa-file-pdf"></i> View Certificate</a>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 2025</div>
+                    <h3>IBM SkillsBuild Internship</h3>
+                    <h4>Edunet Foundation</h4>
+                    <p>4-week internship focused on AI and IBM Cloud Technologies. Showcased technical proficiency via
+                        hands-on project development under expert mentorship.</p>
+                    <a href="AICTE INTERSHIP.pdf" target="_blank" class="btn btn-secondary"
+                        style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: 15px;"><i
+                            class="fas fa-file-pdf"></i> View Certificate</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container section-content scroll-reveal">
+            <h2 class="section-title"><span class="highlight">Education</span> Path</h2>
+            <div class="timeline">
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Graduation: 05/2027 (Ongoing)</div>
+                    <h3>B.E. in Computer Science and Engineering</h3>
+                    <h4>K.S. Rangasamy College of Technology, Tiruchengode</h4>
+                    <p>CGPA: 8.4</p>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Graduation: 03/2023</div>
+                    <h3>Higher Secondary (Class XII)</h3>
+                    <h4>SRK Matric Higher Secondary School, Salem</h4>
+                    <p>Percentage: 86.17%</p>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Graduation: 03/2021</div>
+                    <h3>SSLC (Class X)</h3>
+                    <h4>SRK Matric Higher Secondary School, Salem</h4>
+                    <p>Percentage: 100%</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container section-content scroll-reveal">
+            <h2 class="section-title">Licenses & <span class="highlight">Certifications</span></h2>
+            <div class="certs-grid">
+
+                <div class="glass-card cert-card">
+                    <i class="fas fa-robot cert-icon"></i>
+                    <h3>Prompt Engineering (AI Bootcamp)</h3>
+                    <p>Udemy</p>
+                    <a href="PROMPT UDEMY.pdf" target="_blank" class="btn btn-secondary"
+                        style="padding: 0.5rem 1rem; font-size: 0.85rem; margin-top: 15px;"><i
+                            class="fas fa-file-pdf"></i> View Certificate</a>
+                </div>
+
+                <div class="glass-card cert-card">
+                    <i class="fas fa-cloud cert-icon"></i>
+                    <h3>Oracle Cloud Infrastructure 2025 Certified DevOps Professional</h3>
+                    <p>Oracle</p>
+                    <a href="Oracle Cloud Infrastructure 2025 Certified DevOps Professional.pdf" target="_blank"
+                        class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem; margin-top: 15px;"><i
+                            class="fas fa-file-pdf"></i> View Certificate</a>
+                </div>
+
+                <div class="glass-card cert-card">
+                    <i class="fas fa-laptop-code cert-icon"></i>
+                    <h3>NPTEL Certifications</h3>
+                    <p>Programming in Java - Elite, Design Implementation & Human Computer Interface - Elite</p>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px;">
+                        <a href="Programming in Java.pdf" target="_blank" class="btn btn-secondary"
+                            style="padding: 0.4rem 0.8rem; font-size: 0.8rem;"><i class="fas fa-file-pdf"></i> Java</a>
+                        <a href="Design & Implementation of Human-Computer Interfaces.pdf" target="_blank"
+                            class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;"><i
+                                class="fas fa-file-pdf"></i> HCI Design</a>
+                    </div>
+                </div>
+
+                <div class="glass-card cert-card">
+                    <i class="fas fa-keyboard cert-icon"></i>
+                    <h3>Typewriting in English (Junior)</h3>
+                    <p>State Board Certification</p>
+                    <a href="TypeWriting Jr.pdf" target="_blank" class="btn btn-secondary"
+                        style="padding: 0.5rem 1rem; font-size: 0.85rem; margin-top: 15px;"><i
+                            class="fas fa-file-pdf"></i> View Certificate</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">P<span class="highlight">K</span>L</div>
+                <div class="footer-social">
+                    <a href="https://github.com/PERANANDHA" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/peranandha-k-l-0143b9292" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 PERANANDHA K L. All rights reserved.</p>
+                <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Salem, Tamil Nadu, India - 636307</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
