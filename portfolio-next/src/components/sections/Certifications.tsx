@@ -10,17 +10,17 @@ const CERTS = [
     icon: 'fas fa-robot',
     title: 'Prompt Engineering (AI Bootcamp)',
     issuer: 'Udemy',
-    pdf: '/PROMPT UDEMY.pdf',
+    pdf: '/prompt-udemy.pdf',
     colorClass: 'icon-amber',
-    buttons: [{ label: 'View Certificate', href: '/PROMPT UDEMY.pdf' }],
+    buttons: [{ label: 'View Certificate', href: '/prompt-udemy.pdf' }],
   },
   {
     icon: 'fas fa-cloud',
     title: 'Oracle Cloud Infrastructure 2025 Certified DevOps Professional',
     issuer: 'Oracle',
-    pdf: '/Oracle Cloud Infrastructure 2025 Certified DevOps Professional.pdf',
+    pdf: '/oracle-devops-professional.pdf',
     colorClass: 'icon-red',
-    buttons: [{ label: 'View Certificate', href: '/Oracle Cloud Infrastructure 2025 Certified DevOps Professional.pdf' }],
+    buttons: [{ label: 'View Certificate', href: '/oracle-devops-professional.pdf' }],
   },
   {
     icon: 'fas fa-laptop-code',
@@ -28,17 +28,17 @@ const CERTS = [
     issuer: 'Programming in Java - Elite, Design Implementation & Human Computer Interface - Elite',
     colorClass: 'icon-emerald',
     buttons: [
-      { label: 'Java', href: '/Programming in Java.pdf' },
-      { label: 'HCI Design', href: '/Design & Implementation of Human-Computer Interfaces.pdf' },
+      { label: 'Java', href: '/programming-in-java.pdf' },
+      { label: 'HCI Design', href: '/hci-design.pdf' },
     ],
   },
   {
     icon: 'fas fa-keyboard',
     title: 'Typewriting in English (Junior)',
     issuer: 'State Board Certification',
-    pdf: '/TypeWriting Jr.pdf',
+    pdf: '/typewriting-jr.pdf',
     colorClass: 'icon-cyan',
-    buttons: [{ label: 'View Certificate', href: '/TypeWriting Jr.pdf' }],
+    buttons: [{ label: 'View Certificate', href: '/typewriting-jr.pdf' }],
   },
 ];
 

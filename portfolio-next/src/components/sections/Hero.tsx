@@ -34,7 +34,7 @@ export default function Hero() {
             >
               View My Work
             </button>
-            <a href="/PERANANDHA_K_L_Resume.pdf" target="_blank" rel="noreferrer" className="hero-btn-outline">
+            <a href="/peranandha-resume.pdf" target="_blank" rel="noreferrer" className="hero-btn-outline">
               View Resume
             </a>
             <a href="mailto:peranandha17@gmail.com" className="hero-btn-outline">

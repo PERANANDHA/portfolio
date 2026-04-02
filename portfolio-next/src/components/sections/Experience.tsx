@@ -11,21 +11,21 @@ const EXPERIENCES = [
     role: 'Web Development Intern',
     company: 'Nexyuga Innovations Pvt Ltd',
     desc: 'Designed and developed complete web pages and components from scratch, converting requirements into functional, responsive user interfaces using modern web technologies.',
-    cert: '/NEXYUGA INTERSHIP.pdf',
+    cert: '/nexyuga-internship.pdf',
   },
   {
     date: 'Sep 2025 – Nov 2025',
     role: 'Infosys Internship 6.0',
     company: 'Infosys Springboard',
     desc: 'Completed mandatory assignments on cross-domain knowledge mapping tool development. Gained hands-on exposure to problem-solving, domain mapping, and applied learning.',
-    cert: '/INFOSYS INTERSHIP.pdf',
+    cert: '/infosys-internship.pdf',
   },
   {
     date: 'July 2025',
     role: 'IBM SkillsBuild Internship',
     company: 'Edunet Foundation',
     desc: '4-week internship focused on AI and IBM Cloud Technologies. Showcased technical proficiency via hands-on project development under expert mentorship.',
-    cert: '/AICTE INTERSHIP.pdf',
+    cert: '/aicte-internship.pdf',
   },
 ];
 
