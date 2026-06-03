@@ -7,6 +7,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PROJECTS = [
   {
+    title: 'CodeAudit',
+    subtitle: 'AI-Powered Code Evaluation Platform',
+    github: 'https://github.com/PERANANDHA/CodeAudit',
+    desc: 'An enterprise platform for evaluating multi-language code execution with a React frontend, Java backend, and MySQL database.',
+    tags: ['React', 'Java', 'MySQL'],
+  },
+  {
+    title: 'Restaurant AI',
+    subtitle: 'Full-Stack Platform',
+    github: 'https://github.com/PERANANDHA/Restaurant_AI',
+    desc: 'An AI-driven restaurant management platform featuring both frontend and backend services for seamless operations.',
+    tags: ['Full-Stack', 'AI'],
+  },
+  {
     title: 'DATA PULSE',
     github: 'https://github.com/PERANANDHA/DATAPULSE',
     desc: 'Developed software based on semester calculations and a consolidated report generator for semester exams. Developed only using modern prompt engineering techniques.',

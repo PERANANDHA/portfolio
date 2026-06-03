@@ -34,13 +34,16 @@ const Certifications = () => {
           <div className="glass-card cert-card">
             <i className="fas fa-laptop-code cert-icon"></i>
             <h3>NPTEL Certifications</h3>
-            <p>Programming in Java - Elite, Design Implementation & Human Computer Interface - Elite</p>
+            <p>Programming in Java (Elite), HCI (Elite), Affective Computing (Silver+Elite)</p>
             <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '15px', justifyContent: 'center' }}>
-              <a href="/programming-in-java.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>
-                <i className="fas fa-file-pdf"></i> Java
+              <a href="/Certificates/programming-in-java.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>
+                <i className="fas fa-file-pdf"></i> Java (Elite)
               </a>
-              <a href="/hci-design.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>
-                <i className="fas fa-file-pdf"></i> HCI Design
+              <a href="/Certificates/hci-design.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>
+                <i className="fas fa-file-pdf"></i> HCI (Elite)
+              </a>
+              <a href="/Certificates/Affective Computing.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>
+                <i className="fas fa-file-pdf"></i> Affective Computing (Silver+Elite)
               </a>
             </div>
           </div>

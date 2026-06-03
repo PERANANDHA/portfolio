@@ -15,6 +15,33 @@ const Projects = () => {
 
           <div className="glass-card project-card">
             <div className="project-content">
+              <a href="https://github.com/PERANANDHA/CodeAudit" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <h3>CodeAudit <i className="fab fa-github" style={{ fontSize: '0.9em', marginLeft: '5px', opacity: 0.8 }}></i><br/><span className="subtitle" style={{fontSize: '0.8em', opacity: 0.8, fontWeight: 'normal'}}>AI-Powered Code Evaluation Platform</span></h3>
+              </a>
+              <p>An enterprise platform for evaluating multi-language code execution with a React frontend, Java backend, and MySQL database.</p>
+              <div className="project-tech">
+                <span>React</span>
+                <span>Java</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="glass-card project-card">
+            <div className="project-content">
+              <a href="https://github.com/PERANANDHA/Restaurant_AI" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <h3>Restaurant AI <i className="fab fa-github" style={{ fontSize: '0.9em', marginLeft: '5px', opacity: 0.8 }}></i><br/><span className="subtitle" style={{fontSize: '0.8em', opacity: 0.8, fontWeight: 'normal'}}>Full-Stack Platform</span></h3>
+              </a>
+              <p>An AI-driven restaurant management platform featuring both frontend and backend services for seamless operations.</p>
+              <div className="project-tech">
+                <span>Full-Stack</span>
+                <span>AI</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="glass-card project-card">
+            <div className="project-content">
               <a href="https://github.com/PERANANDHA/DATAPULSE" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <h3>DATA PULSE <i className="fab fa-github" style={{ fontSize: '0.9em', marginLeft: '5px', opacity: 0.8 }}></i></h3>
               </a>

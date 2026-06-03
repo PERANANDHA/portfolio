@@ -25,11 +25,12 @@ const CERTS = [
   {
     icon: 'fas fa-laptop-code',
     title: 'NPTEL Certifications',
-    issuer: 'Programming in Java - Elite, Design Implementation & Human Computer Interface - Elite',
+    issuer: 'Programming in Java (Elite), HCI (Elite), Affective Computing (Silver+Elite)',
     colorClass: 'icon-emerald',
     buttons: [
-      { label: 'Java', href: '/programming-in-java.pdf' },
-      { label: 'HCI Design', href: '/hci-design.pdf' },
+      { label: 'Java (Elite)', href: '/Certificates/programming-in-java.pdf' },
+      { label: 'HCI (Elite)', href: '/Certificates/hci-design.pdf' },
+      { label: 'Affective Computing (Silver+Elite)', href: '/Certificates/Affective Computing.pdf' },
     ],
   },
   {

@@ -24,8 +24,7 @@ const Hero = () => {
           </p>
           <div className="hero-actions">
             <a href="#projects" className="btn btn-primary">View My Work</a>
-            <a href="/peranandha-resume.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary">View Resume</a>
-            <a href="mailto:peranandha17@gmail.com" className="btn btn-secondary">Contact Me</a>
+            <a href="/Certificates/PERANANDHA_K_L_RESUME.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary">View Resume</a>
           </div>
           <div className="social-links">
             <a href="https://github.com/PERANANDHA" target="_blank" rel="noreferrer" aria-label="GitHub">
