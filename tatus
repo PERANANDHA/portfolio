@@ -1,0 +1,19 @@
+[33mcommit 3e044e015df3070b88a234b5fe6ada6872f490cf[m
+Author: Coders in Flow <codersinflow@localhost>
+Date:   Sat Jun 13 18:54:43 2026 +0530
+
+    Updated portfolio
+
+[1mdiff --git a/index.html b/index.html[m
+[1mindex bd945a7..0a0cc9f 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -214,7 +214,7 @@[m
+               aria-label="LinkedIn"[m
+               ><i class="fab fa-linkedin-in"></i[m
+             ></a>[m
+[31m-            <a href="mailto:peranandha17@gmail.com" aria-label="Email"[m
+[32m+[m[32m            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=peranandha17@gmail.com" target="_blank" aria-label="Email"[m
+               ><i class="fas fa-envelope"></i[m
+             ></a>[m
+             <a href="tel:+918148537603" aria-label="Phone" class="phone-link"[m
