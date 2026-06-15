@@ -29,8 +29,7 @@ const Hero = () => {
               href="https://mail.google.com/mail/?view=cm&fs=1&to=peranandha17@gmail.com" 
               target="_blank" 
               rel="noreferrer" 
-              className="btn btn-primary"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'linear-gradient(45deg, #0ea5e9, #8b5cf6)', border: 'none', color: '#fff', boxShadow: '0 4px 15px rgba(14, 165, 233, 0.3)' }}
+              className="btn btn-contact"
             >
               <i className="fas fa-paper-plane"></i> Contact Me
             </a>

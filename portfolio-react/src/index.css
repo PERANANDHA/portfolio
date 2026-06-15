@@ -401,6 +401,21 @@ nav.scrolled {
     box-shadow: 0 0 25px var(--primary);
 }
 
+.btn-contact {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--bg-main);
+    border: none;
+    box-shadow: 0 4px 15px var(--primary-glow);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--primary-glow);
+}
+
 .btn-secondary {
     background: transparent;
     color: var(--primary);
