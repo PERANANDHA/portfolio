@@ -25,6 +25,15 @@ const Hero = () => {
           <div className="hero-actions">
             <a href="#projects" className="btn btn-primary">View My Work</a>
             <a href="/Certificates/PERANANDHA_K_L_RESUME.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary">View Resume</a>
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=peranandha17@gmail.com" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="btn btn-primary"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'linear-gradient(45deg, #0ea5e9, #8b5cf6)', border: 'none', color: '#fff', boxShadow: '0 4px 15px rgba(14, 165, 233, 0.3)' }}
+            >
+              <i className="fas fa-paper-plane"></i> Contact Me
+            </a>
           </div>
           <div className="social-links">
             <a href="https://github.com/PERANANDHA" target="_blank" rel="noreferrer" aria-label="GitHub">
@@ -33,9 +42,7 @@ const Hero = () => {
             <a href="https://linkedin.com/in/peranandha-k-l-0143b9292" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="mailto:peranandha17@gmail.com" aria-label="Email">
-              <i className="fas fa-envelope"></i>
-            </a>
+
             <a href="tel:+918148537603" aria-label="Phone" className="phone-link">
               <i className="fas fa-phone"></i>
               <span>+91 81485 37603</span>

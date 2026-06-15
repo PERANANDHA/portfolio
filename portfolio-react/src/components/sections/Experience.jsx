@@ -37,7 +37,7 @@ const Experience = () => {
 
           <div className="timeline-item glass-card">
             <div className="timeline-dot"></div>
-            <div className="timeline-date">July 2025</div>
+            <div className="timeline-date">July 2025 - Aug 2025</div>
             <h3>IBM SkillsBuild Internship</h3>
             <h4>Edunet Foundation</h4>
             <p>4-week internship focused on AI and IBM Cloud Technologies. Showcased technical proficiency via hands-on project development under expert mentorship.</p>
