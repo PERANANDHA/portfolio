@@ -16,6 +16,14 @@ const Footer = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </div>
+          <a 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=peranandha17@gmail.com" 
+            target="_blank" 
+            rel="noreferrer"
+            className="footer-email"
+          >
+            <i className="fas fa-envelope"></i> peranandha17@gmail.com
+          </a>
           <p className="footer-copy">&copy; {new Date().getFullYear()} PERANANDHA K L. All rights reserved.</p>
           <p className="footer-location">
             <i className="fas fa-map-marker-alt"></i> Salem, Tamil Nadu, India - 636307

@@ -15,19 +15,26 @@ export default function Footer() {
         <p className="text-3xl font-black tracking-wider footer-logo">
           P<span className="gradient-text">K</span>L
         </p>
-        <div className="flex items-center gap-5">
-          {[
-            { href: 'https://github.com/PERANANDHA', icon: 'fab fa-github', label: 'GitHub' },
-            { href: 'https://linkedin.com/in/peranandha-k-l-0143b9292', icon: 'fab fa-linkedin-in', label: 'LinkedIn' },
-            { href: 'mailto:peranandha17@gmail.com', icon: 'fas fa-envelope', label: 'Email' },
-          ].map((s) => (
-            <a key={s.href} href={s.href} target="_blank" rel="noreferrer"
-               className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 footer-social-link"
-               aria-label={s.label}>
-              <i className={`${s.icon} text-sm`} />
-            </a>
-          ))}
+        <div className="flex justify-center gap-4 mb-6">
+          <a href="https://github.com/PERANANDHA" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+               className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 footer-social-link">
+              <i className="fab fa-github text-xl" />
+          </a>
+          <a href="https://linkedin.com/in/peranandha-k-l-0143b9292" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+               className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 footer-social-link">
+              <i className="fab fa-linkedin-in text-xl" />
+          </a>
         </div>
+        
+        <a 
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=peranandha17@gmail.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-block mb-6 text-base font-medium opacity-80 hover:opacity-100 transition-all duration-300 hover:-translate-y-0.5 footer-email"
+        >
+          <i className="fas fa-envelope mr-2 footer-email-icon" /> peranandha17@gmail.com
+        </a>
+
         <p className="text-xs footer-location">
           <i className="fas fa-map-marker-alt mr-1 footer-location-icon" /> Salem, Tamil Nadu, India — 636307
         </p>
